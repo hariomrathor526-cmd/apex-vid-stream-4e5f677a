@@ -19,7 +19,7 @@ export const Route = createFileRoute("/admin")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Admin — ApexLecture" },
+      { title: "Admin — AURA MAX" },
       { name: "robots", content: "noindex,nofollow" },
     ],
   }),
@@ -157,7 +157,7 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
   return (
     <div style={{ background: "#0b0b12", minHeight: "100vh", color: "#eee" }}>
       <header style={styles.header}>
-        <strong>ApexLecture Admin</strong>
+        <strong>AURA MAX Admin</strong>
         <div style={{ display: "flex", gap: 8 }}>
           {(["logs", "blocks", "settings", "stats"] as const).map((t) => (
             <button
