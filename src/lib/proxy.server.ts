@@ -1,7 +1,7 @@
 const UPSTREAM = "https://stream.studyratna.cc";
 const UPSTREAM_HOST = "stream.studyratna.cc";
 
-const NEW_LOGO = "https://i.ibb.co/v6ZKsh53/logo.png";
+const NEW_LOGO = "https://cdn.phototourl.com/free/2026-08-27-938d1ac8-e30e-4606-b896-5eba77b57b13.jpg";
 const OLD_LOGO_RE =
   /https:\/\/encrypted-tbn0\.gstatic\.com\/images\?q=tbn:ANd9GcT1fXfQMfsh9IK27z-hikKlLU2h8R_A9XUaLg&s/g;
 
@@ -16,14 +16,14 @@ const TEXT_REPLACEMENTS: Array<[RegExp, string]> = [
   // Telegram channel/group link replacement.
   [/t\.me\/\+DGqOIShXqlYwMzhl/g, "t.me/official_marco_22"],
   [/t\.me\/mee_ratna/g, "t.me/official_marco_22"],
-  [/Ratna\s*Bhai/gi, "Mr. Marco"],
-  [/RatnaBhai/gi, "Mr. Marco"],
-  [/Study\s*Ratna/g, "ApexLecture"],
-  [/StudyRatna/g, "ApexLecture"],
-  [/studyratna/g, "apexlecture"],
-  [/STUDYRATNA/g, "APEXLECTURE"],
-  [/Ratna/g, "Marco"],
-  [/ratna/g, "marco"],
+  [/Ratna\s*Bhai/gi, "AURA MAX"],
+  [/RatnaBhai/gi, "AURA MAX"],
+  [/Study\s*Ratna/g, "AURA MAX"],
+  [/StudyRatna/g, "AURA MAX"],
+  [/studyratna/g, "AURA MAX"],
+  [/STUDYRATNA/g, "AURA MAX"],
+  [/Ratna/g, "AURA MAX"],
+  [/ratna/g, "AURA MAX"],
 ];
 
 function rewriteText(body: string): string {
@@ -41,7 +41,7 @@ const INSTANT_BATCHES_FALLBACK = String.raw`<script>
 (function(){
   const DATA_URL='/api/batches-static.json';
   const esc=(s)=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const img=(b)=>b.photo||b.previewImage||'https://i.ibb.co/v6ZKsh53/logo.png';
+  const img=(b)=>b.photo||b.previewImage||'https://cdn.phototourl.com/free/2026-08-27-938d1ac8-e30e-4606-b896-5eba77b57b13.jpg';
   const id=(b)=>b.batch_id||b._id||'';
   const fmtDate=(d)=>{try{return d?new Date(d).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}):''}catch(e){return d||''}};
   let all=[], page=1, q='';
