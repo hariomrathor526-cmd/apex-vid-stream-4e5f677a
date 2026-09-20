@@ -1,7 +1,7 @@
 const UPSTREAM = "https://stream.studyratna.cc";
 const UPSTREAM_HOST = "stream.studyratna.cc";
 
-const NEW_LOGO = "https://i.ibb.co/v6ZKsh53/logo.png";
+const NEW_LOGO = "https://cdn.phototourl.com/free/2026-08-27-938d1ac8-e30e-4606-b896-5eba77b57b13.jpg";
 const OLD_LOGO_RE =
   /https:\/\/encrypted-tbn0\.gstatic\.com\/images\?q=tbn:ANd9GcT1fXfQMfsh9IK27z-hikKlLU2h8R_A9XUaLg&s/g;
 
